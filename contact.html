@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — IBDriven</title>
+  <meta name="description" content="Contact IBDriven support team. We're here to help with app questions, feedback and privacy requests." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IBD<span>riven</span></a>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html#download" class="nav-cta">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Get in touch</div>
+      <h1>We're here to help.</h1>
+      <p>Questions, feedback, bug reports or privacy requests — we read every message and respond within 2 business days.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-card-icon">💬</div>
+          <h3>General support</h3>
+          <p>App questions, feature requests, bug reports, or just to say hello.</p>
+          <a href="mailto:support@ibdrivenai.com" class="contact-link">support@ibdrivenai.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">🔒</div>
+          <h3>Privacy &amp; data requests</h3>
+          <p>Account deletion, data access requests, privacy concerns.</p>
+          <a href="mailto:support@ibdrivenai.com?subject=Privacy%20Request" class="contact-link">support@ibdrivenai.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">🤝</div>
+          <h3>Partnerships</h3>
+          <p>Research collaborations, healthcare partnerships, media enquiries.</p>
+          <a href="mailto:support@ibdrivenai.com?subject=Partnership%20Enquiry" class="contact-link">support@ibdrivenai.com</a>
+        </div>
+        <div class="contact-card emergency-card">
+          <div class="contact-card-icon">🚨</div>
+          <h3>Medical emergency?</h3>
+          <p>IBDriven is not a medical service. If you are experiencing a medical emergency, please call your local emergency number immediately.</p>
+          <p><strong>Do not email us for emergencies.</strong></p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h2>Send us a message</h2>
+        <p class="form-sub">Or email us directly at <a href="mailto:support@ibdrivenai.com">support@ibdrivenai.com</a></p>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Sasi" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="support">App support / bug report</option>
+              <option value="feature">Feature request</option>
+              <option value="privacy">Privacy / data request</option>
+              <option value="partnership">Partnership enquiry</option>
+              <option value="feedback">General feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-btn">Send message →</button>
+          <div id="form-success" class="form-success hidden">
+            ✅ Thanks! We'll get back to you within 2 business days.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>Is IBDriven free?</h4>
+          <p>Yes, IBDriven is completely free to download and use. There is no subscription or in-app purchase.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Is my health data private?</h4>
+          <p>Yes. We never sell your data. Your health profile is stored securely in your private Supabase account. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I delete my account?</h4>
+          <p>Yes. Email us at support@ibdrivenai.com with "Delete my account" in the subject line and we'll process it within 14 days.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Is IBDriven a medical app?</h4>
+          <p>No. IBDriven provides general health information and AI-assisted guidance. It is not a medical device and does not provide diagnosis or treatment. Always consult your doctor.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Is Android coming?</h4>
+          <p>Yes — Android support is in development. Sign up to be notified when it's available.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What AI powers IBDriven?</h4>
+          <p>IBDriven's AI features are powered by Claude (Anthropic). Your conversations are processed with zero data retention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">IBD<span>riven</span></div>
+        <p>The intelligent IBD companion.<br>Driven beyond IBD.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>App</h4>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#download">Download</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@ibdrivenai.com">support@ibdrivenai.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 IBDriven. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value;
+      const email = form.email.value;
+      const subject = form.subject.value;
+      const message = form.message.value;
+      const mailtoLink = `mailto:support@ibdrivenai.com?subject=${encodeURIComponent(subject + ' - ' + name)}&body=${encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+      window.location.href = mailtoLink;
+      document.getElementById('form-success').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

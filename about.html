@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — IBDriven</title>
+  <meta name="description" content="IBDriven was built by someone who understands IBD from the inside. Learn about our mission and the team behind the app." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IBD<span>riven</span></a>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#download" class="nav-cta">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Our story</div>
+      <h1>Built for IBD patients.<br><span class="green">By people who get it.</span></h1>
+      <p>IBDriven was born out of a simple frustration — there was no single app that truly understood what it means to live with Crohn's disease or Ulcerative Colitis every single day.</p>
+    </div>
+  </section>
+
+  <section class="about-mission">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Our mission</h2>
+        <p>IBD affects over 10 million people worldwide. It's unpredictable, exhausting and often invisible. Managing it requires constant attention to food, medications, mental health, hospital appointments, and so much more.</p>
+        <p>IBDriven exists to make that burden lighter. We combine AI with evidence-based IBD guidance to give patients the kind of knowledgeable, always-available support that most people only get at specialist appointments — if they're lucky.</p>
+        <p>Our AI companion Amul is named after care, warmth and nourishment. He's not here to replace your doctor — he's here for the 2am questions, the confusing blood results, the restaurant menus you're not sure about, and the days when you just need someone who understands.</p>
+      </div>
+      <div class="about-values">
+        <div class="value-card">
+          <div class="value-icon">🔬</div>
+          <h3>Evidence-based</h3>
+          <p>Every piece of content in IBDriven is grounded in guidelines from ECCO, the Crohn's & Colitis Foundation, NHS and NICE.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔒</div>
+          <h3>Privacy first</h3>
+          <p>Your health data stays on your device and in your private Supabase account. We never sell data. Ever.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💚</div>
+          <h3>Patient-centred</h3>
+          <p>Every feature was designed around real patient needs — including caregiver support, mental health tools, and women's health.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Honest AI</h3>
+          <p>Amul always acknowledges his limits. He will never diagnose you or replace your medical team. He's a companion, not a clinician.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-tech">
+    <div class="container">
+      <h2>Built with care</h2>
+      <p class="section-sub">IBDriven is built on technology you can trust.</p>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <div class="tech-icon">🤖</div>
+          <h4>Claude by Anthropic</h4>
+          <p>Amul is powered by Claude Sonnet — one of the most capable and safety-focused AI models available.</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🛡️</div>
+          <h4>Zero data retention</h4>
+          <p>Anthropic's API has zero data retention. Your health conversations are never stored on their servers.</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">📱</div>
+          <h4>React Native + Expo</h4>
+          <p>Built natively for iOS and Android using React Native — fast, reliable and accessible.</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🔐</div>
+          <h4>Supabase</h4>
+          <p>Your profile and health data is stored securely in your private Supabase account with row-level security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-disclaimer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <h3>⚕️ Medical disclaimer</h3>
+        <p>IBDriven provides general health information and AI-assisted guidance for educational purposes only. The app and its AI companion Amul do not provide medical diagnosis, treatment or personalised medical advice. Always consult your gastroenterologist, IBD nurse or qualified healthcare professional for medical decisions. In an emergency, call your local emergency services immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Ready to take control of your IBD?</h2>
+      <p>Download IBDriven free on iOS today.</p>
+      <a href="index.html#download" class="btn-primary">📱 Download on the App Store</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">IBD<span>riven</span></div>
+        <p>The intelligent IBD companion.<br>Driven beyond IBD.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>App</h4>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#download">Download</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@ibdrivenai.com">support@ibdrivenai.com</a>
+          <a href="contact.html">Send a message</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 IBDriven. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+      <p class="footer-disclaimer">IBDriven provides general health information only. It is not a substitute for professional medical advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
